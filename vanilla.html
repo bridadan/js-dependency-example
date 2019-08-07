@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JQuery Test</title>
+</head>
+<body>
+    <div>
+        <h1>Hi, my name is: <span id="name"></span></h1>
+        <button id="edit-name">Edit name</button>
+    </div>
+    <script>
+        const nameElement = document.getElementById("name");
+        const button = document.getElementById("edit-name");
+        button.addEventListener('click', () => {
+            const name = prompt("Enter your name please:");
+            nameElement.textContent = name;
+        });
+    </script>
+</body>
+</html>

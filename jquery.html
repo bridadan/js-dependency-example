@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JQuery Test</title>
+</head>
+<body>
+    <div>
+        <h1>Hi, my name is: <span id="name"></span></h1>
+        <button id="edit-name">Edit name</button>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $("#edit-name").click(() => {
+            const name = prompt("Enter your name please:");
+            $("#name").text(name);
+        });
+    </script>
+</body>
+</html>
